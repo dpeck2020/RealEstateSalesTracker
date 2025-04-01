@@ -1,0 +1,6 @@
+Flask
+Flask-SQLAlchemy
+requests
+beautifulsoup4
+python-dotenv # For environment variables like SECRET_KEY
+Flask-Migrate # For database migrations
