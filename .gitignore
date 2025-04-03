@@ -106,6 +106,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+venv/
 
 # Spyder project settings
 .spyderproject
@@ -135,3 +136,24 @@ cython_debug/
 *.db
 *.sqlite3
 app.db
+
+# Environment
+.venv/
+*.pyc
+
+# Instance folder
+instance/
+
+# Data files
+*.csv
+
+# Temp files
+*.html
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Scrapers (Optional - keeping them ignored for now)
+app/scrapers/

@@ -2,5 +2,10 @@ Flask
 Flask-SQLAlchemy
 requests
 beautifulsoup4
+selenium # For browser automation to bypass anti-scraping
+undetected-chromedriver # Patched chromedriver to avoid detection
+Flask-Migrate
 python-dotenv # For environment variables like SECRET_KEY
-Flask-Migrate # For database migrations
+setuptools # Required dependency for undetected-chromedriver in Python 3.12+
+# Add pyzill directly from GitHub (non-editable)
+git+https://github.com/johnbalvin/pyzill.git

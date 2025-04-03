@@ -13,11 +13,13 @@ def create_app(config_class=Config):
     db.init_app(app)
     migrate.init_app(app, db)
 
-    # Register blueprints here
-    from app.routes import bp as main_bp
+    # Register blueprints
+    from app.main import main_bp
     app.register_blueprint(main_bp)
 
-    # Import models here to ensure they are known to SQLAlchemy
-    from app import models
+    # Other app setup (e.g., logging, extensions)
 
     return app
+
+# Import models at the bottom to avoid circular dependencies
+from app import models
